@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Show</button>
+    <button id="btn2">Hide</button>
+    <hr>
+    <div id="imageContainer">
+        <img src="https://picsum.photos/id/236/200/150" alt="">
+        <img src="https://picsum.photos/id/238/200/150" alt="">
+        <img src="https://picsum.photos/id/239/200/150" alt="">
+        <img src="https://picsum.photos/id/240/200/150" alt="">
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum et quis, quam aliquid fugit laboriosam, eos excepturi quasi unde soluta vero cum porro in provident ipsum atque repudiandae? Autem, dolore.
+    Et, pariatur doloremque magni, voluptas nisi possimus at vitae dolor aut esse molestiae consequatur, dicta similique ipsum error doloribus perferendis rerum praesentium delectus assumenda impedit asperiores minima? Fugit, minima facilis.
+    Nisi quia molestias rem ipsum repellendus cum odio ducimus. Voluptatum, sed magni aut repellat reiciendis dignissimos laboriosam ad repellendus explicabo ea neque temporibus quisquam voluptatem omnis veritatis incidunt aperiam! Culpa.</p>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#imageContainer").show(1000);
+            });
+            $("#btn2").click(function(){
+                $("#imageContainer").hide(1000);
+            });
+        });
+    </script>
+</body>
+</html>
