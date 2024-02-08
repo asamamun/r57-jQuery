@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chaya{
+            box-shadow: 0px 5px 5px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://google.com" id="a1">click me to visit google</a>
+    <h1 id="headone">jQuery is boaring</h1>
+    <p>put some content here</p>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam deleniti consequuntur eius in, perspiciatis corporis, ipsam quo natus repellendus nam inventore quae ipsa quaerat animi sint, officiis quam tempora consequatur?</p>
+    <hr>
+    <p>3 p</p>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h1#headone").click(function (e) { 
+                e.preventDefault();
+                console.log( $(this).html() ) 
+                $(this).html("jQuery is not boaring. Welcome to jQuery!!!").css("color", "red").addClass("chaya");           
+            });
+
+            $("p").click(function(){
+                $(this).html("দিন যতই গড়াচ্ছে, কিলিয়ান এমবাপ্পের রিয়াল মাদ্রিদে যাওয়ার খবরে যোগ হচ্ছে নতুন সব তথ্য। এখনো চূড়ান্ত ঘোষণা না এলেও এমবাপ্পে নাকি গ্রীষ্মের দলবদলে ফ্রি এজেন্ট হিসেবে পিএসজি ছেড়ে রিয়ালে যাওয়ার সিদ্ধান্ত নিয়ে ফেলেছেন। রিয়ালও এখন আগের যেকোনো সময়ের চেয়ে এমবাপ্পেকে পাওয়ার ব্যাপারে দারুণভাবে আত্মবিশ্বাসী।অন্যদিকে পিএসজিও অবশ্য এখনই হাল ছাড়তে নারাজ। চূড়ান্ত ঘোষণা আসার আগ পর্যন্ত, এমবাপ্পেকে ধরে রাখার চেষ্টা চালিয়ে যেতে চায় প্যারিসের ক্লাবটি। যদিও সাম্প্রতিক সময়ের খবরগুলো পিএসজির জন্য মোটেও আশাবাদী হওয়ার মতো নয়। এর মধ্যে এবার রিয়াল–এমবাপ্পের মধ্যে অর্থনৈতিক চুক্তি কেমন হতে পারে, তা নিয়ে খবর প্রকাশ করেছে স্প্যানিশ সংবাদমাধ্যম কাদেনা এসইআর।");
+            });
+
+            $("#a1").click(function(e){
+                e.preventDefault();
+                $(this).addClass("chaya");
+            });
+        });
+    </script>
+</body>
+</html>
