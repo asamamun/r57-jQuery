@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>selector</h1>
+    <h3>factory fx: $()</h3>
+    <h3>jQuery alias is $</h3>
+    <div>
+        <p class="myclass">This is a paragraph.</p>
+        <p id="myid">This is second paragraph.</p>
+        <p>This is third paragraph.</p>
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h1").css("color", "green");
+
+            var pars = $("p");
+            console.log(pars[1].innerHTML);
+            for (i = 0; i < pars.length; i++) {
+                alert("Found paragraph: " + pars[i].innerHTML);
+            }
+
+            $("h1, h3, p").css("background-color", "gray");
+        });
+    </script>
+</body>
+
+</html>

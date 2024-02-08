@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+        #imageContainer img{ width: 80px; height: 60px;}
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" required> <br>
+        <input type="text"> <br>
+        <input type="text" required> <br>
+    </form>
+    <hr>
+    <a href="add-image.html" title="add image">add image</a> |
+    <a href="content-manipulation.html" title="content manipulation">Content</a>
+    <hr>
+    <div id="imageContainer">
+        <img src="https://picsum.photos/id/230/800/600" alt="">
+        <img src="https://picsum.photos/id/231/800/600" alt="">
+        <img src="https://picsum.photos/id/233/800/600" alt="">
+        <img src="https://picsum.photos/id/232/800/600" alt="">
+        <img src="https://picsum.photos/id/234/800/600" alt="">
+        <img src="https://picsum.photos/id/235/800/600" alt="">
+        <img src="https://picsum.photos/id/239/800/600" alt="">
+    </div>
+    <hr>
+    <img src="#" alt="" id="mainimage">
+    <hr>
+    <h3 id="link"></h3>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input:required").css("border", "2px solid red");
+            $("a").click(function (e) {
+                e.preventDefault();
+                let t = $(this).attr("title");
+                $("#link").html(t);
+            });
+
+$("#imageContainer img").click(function(){
+    let link = $(this).attr("src");//get
+    // $("#mainimage").attr("src", $(this).attr("src")).attr("width","800px");//set
+    $("#mainimage").attr("src", link).attr("width","800px");//set
+});
+
+        });
+    </script>
+</body>
+
+</html>

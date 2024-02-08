@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="mb-3 mt-3">
+            <input type="hidden" class="form-control" id="id" name="id" value="1">
+        </div>
+        <button type="button" class="btn btn-secondary btn-sm" id="addImage">Add Image</button>
+        <div class="mb-3 mt-3" id="imageArray">
+            <input type="file" class="form-control mb-2" name="image[]" multiple>
+        </div>
+        <button type="submit" class="btn btn-primary" name="submit" value="update">Submit</button>
+    </form>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#addImage").click(function () {
+                $("#imageArray").append('<div class="ai"><input type="file" class="form-control mb-2" name="image[]" multiple><span class="di">&times;</span></div>');
+            });
+
+            $("#imageArray").on("click",".di",function(){
+                $(this).parent().remove();
+            });
+
+        });
+    </script>
+</body>
+</html>
