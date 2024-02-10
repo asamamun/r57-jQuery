@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/id/210/100/150" alt="">
+        <img src="https://picsum.photos/id/211/100/150" alt="">
+        <img src="https://picsum.photos/id/212/100/150" alt="">
+        <img src="https://picsum.photos/id/213/100/150" alt="">
+        <img src="https://picsum.photos/id/214/100/150" alt="">
+        <img src="https://picsum.photos/id/215/100/150" alt="">
+        <img src="https://picsum.photos/id/216/100/150" alt="">
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("img").click(function () {
+            let source = $(this).attr("src");
+            $(this).replaceWith("<img src='../assets/images/agent.jpg' width='100px'>");
+            // $(this).replaceWith("<input type='text' value='" + source +"'>");
+
+            //
+           });
+
+        });
+    </script>
+</body>
+
+</html>

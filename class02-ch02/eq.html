@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style>
+        .active{ color:red; }
+    </style>
+</head>
+<body>
+    <p>highlight list item when item is hover, add bg-primary class when item is hover. Use hover function </p>
+    <p>add bg-info class to the list items who has class event. use addClass function</p>
+    <ol>
+        <li class="event">ready</li>
+        <li class="event">click</li>
+        <li class="event">hover</li>
+        <li>css</li>
+        <li>addClass</li>
+        <li>removeClass</li>
+        <li>attr</li>
+        <li>removeAttr</li>
+        <li>filter</li>
+        <li>find</li>
+        <li class="event">change</li>
+        <li>val</li>
+        <li>parent</li>
+        <li>html</li>
+        <li>remove</li>
+        <li>hasClass</li>
+    </ol>
+    <ol>
+        <li class="event">ready</li>
+        <li class="event">click</li>
+        <li class="event">hover</li>
+        <li>css</li>
+        <li>addClass</li>
+        <li>removeClass</li>
+        <li>attr</li>
+        <li>removeAttr</li>
+        <li>filter</li>
+        <li>find</li>
+        <li class="event">change</li>
+        <li>val</li>
+        <li>parent</li>
+        <li>html</li>
+        <li>remove</li>
+        <li>hasClass</li>
+    </ol>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa iste in cum, distinctio quia quo rem saepe atque blanditiis veniam, facilis veritatis perspiciatis error, rerum fugiat labore unde placeat laborum?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa iste in cum, <span> distinctio quia quo rem saepe atque blanditiis veniam</span>, facilis veritatis perspiciatis error, rerum fugiat labore unde placeat laborum?</p>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            alert($("li").length)
+            $("li").eq(20).addClass("active");
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <ul>
+            <li class="top">list item 1</li>
+            <li class="top">list item 2</li>
+            <li class="middle">list item 3</li>
+            <li class="middle">list item 4</li>
+            <li class="bottom">list item 5</li>
+            <li class="bottom">list item 6</li>
+            </ul>
+            </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("li").filter(".top").addClass("text-danger");
+            $("li").filter(".middle").addClass("text-warning");
+            $("li").filter(".bottom").addClass("text-success");
+        });
+
+    </script>
+
+</body>
+
+</html>

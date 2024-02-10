@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>functions used here:change,click, val, parent, find, html, remove </h1>
+        <table class="table table-responsive">
+            <tr>
+                <th>id</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Image</th>
+                <th>Action</th>                
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ViewSonic Flower</td>
+                    <td class="price">7000</td>
+                    <td><input type="number" value="1"></td>
+                    <td class="total">7000</td>
+                    <td><img src="../assets/images/1 (1).jpg" alt="" width="100px"></td>
+                    <td> <button class="deleteProduct  btn btn-outline-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mobile</td>
+                    <td class="price">70000</td>
+                    <td><input type="number" value="1"></td>
+                    <td class="total">70000</td>
+                    <td><img src="../assets/images/1 (2).jpg" alt="" width="100px"></td>
+                    <td> <button class="deleteProduct btn btn-outline-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Laptop</td>
+                    <td class="price">85000</td>
+                    <td><input type="number" value="1"></td>
+                    <td class="total">85000</td>
+                    <td><img src="../assets/images/1 (3).jpg" alt="" width="100px"></td>
+                    <td> <button class="deleteProduct  btn btn-outline-danger">Remove</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="table-warning">
+                    <td colspan="2">Grand Total</td>
+                    <td colspan="5" id="gt" class="text-end">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").hover(function () {
+                $(this).width( ($(this).width()*1.2) );
+            }, function () {
+                $(this).width( ($(this).width()/1.2) );
+            })
+
+
+            $(".total").css({
+                color:"green",
+                fontSize:"1.2em",
+                fontFamily:"cursive"
+            });
+            function calcgrandtotal(){
+                let t = $(".total");
+                let grandtotal = 0;
+                //jQuery.each( array, callback )
+                $.each(t,function(k,v){
+                    console.log(k + ": " + v.innerHTML);
+                    grandtotal += Number(v.innerHTML);
+                })
+                $("#gt").html(grandtotal);
+            }
+            $("input[type=number]").change(function(){
+                $t = $(this);
+                //alert($t.val())
+                let q = $t.val();
+                // let p = $t.parent().parent().find(".price").html();
+                let p = $t.closest("tr").find(".price").html();
+                // alert(p);
+                // $t.parent().parent().find(".total").html(q*p);
+                $t.closest("tr").find(".total").html(q*p);
+                calcgrandtotal();
+            });
+
+            $(".deleteProduct").click(function(){
+                // $(this).parent().parent().remove();
+                $(this).closest("tr").remove();
+                calcgrandtotal();
+            });
+
+            calcgrandtotal();
+        });
+
+    </script>
+
+</body>
+
+</html>

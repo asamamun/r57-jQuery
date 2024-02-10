@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="changeBtn" class="btn btn-outline-info">change content</button> <br>
+        <em title="Bold and Brave">This is first paragraph.</em>
+        <p id="myid">This is second paragraph.</p>
+        <div id="divid">this content will change from em title attr</div>
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#changeBtn").click(function () {
+                var title = $("em").attr("title");
+                $("#divid").text(title);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

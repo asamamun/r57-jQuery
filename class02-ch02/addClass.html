@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style>
+        .redtext{ color: red;}
+        .yellowtext{ color: yellow;}
+        .greentext{ color: green;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="changeBtn">Make me beautiful</button> 
+        <button id="removeBtn">Remove Makeup</button> <br>
+        <em title="Bold and Brave">This is first paragraph.</em>
+        <p id="myid">This is second paragraph.</p>
+        <div id="divid">this content will change from em title attr</div>
+        <hr>
+        <ul id="menulist">
+            <li>potato</li>
+            <li>cauliflower(fulcopi)</li>
+            <li>cabbage(badhacopi)</li>
+            <li>carrot</li>
+            <li>beetroot</li>
+            <li>tomato</li>
+            <li>bean</li>
+        </ul>
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#changeBtn").click(function () {
+                $(this).addClass("btn btn-outline-info");
+                $("p#myid").addClass("greentext");
+            });
+
+            $("#removeBtn").click(function(){
+                $("#changeBtn").removeClass("btn btn-outline-info");
+                $("p#myid").removeClass("greentext");
+            });
+
+            $("#menulist li").click(function(){
+                $(this).toggleClass("yellowtext");
+
+/*                 if( $(this).hasClass("yellowtext") ){
+                    $(this).removeClass("yellowtext");
+                }
+                else{
+                    $(this).addClass("yellowtext");
+                } */
+                
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

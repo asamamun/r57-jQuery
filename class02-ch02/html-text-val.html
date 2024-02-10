@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="gethtml">get html data</button>
+        <button id="gettext">get text data</button>
+        <ul id="menulist">
+            <li>potato</li>
+            <li>cauliflower(fulcopi)</li>
+            <li>cabbage(badhacopi)</li>
+            <li>carrot</li>
+            <li>beetroot</li>
+            <li>tomato</li>
+            <li>bean</li>
+        </ul>
+        <hr>
+        <div id="result"></div>
+
+        <hr>
+        <form action="login.php">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="email" value="test@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="pass">Gender</label>
+                Male: <input type="radio"  name="g" value="m">
+                Female: <input type="radio"  name="g" value="f">
+                Other: <input type="radio"  name="g" value="o">
+            </div>
+
+            <div class="form-group">                
+                <input type="submit" class="btn btn-outline-success" id="submit" value="Login">
+                <input type="button" value="Clear" id="cls" class="btn btn-outline-danger">
+            </div>
+        </form>
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("#gethtml").click(function(){
+            // console.log( $("#menulist").html() );
+            // $("#result").html($("#menulist").html());
+            $("#result").text($("#menulist").html());
+           });
+           $("#gettext").click(function(){
+            console.log( $("#menulist").text() );
+           });
+
+           $("#submit").click(function(e){
+            e.preventDefault();
+            let em = $("#email").val();//get
+            let pass = $("#pass").val();//get
+            let s = $("input:radio[name=g]:checked").val(); 
+            alert("Email" + em + ", pass: " + pass + ", sex: " + s);
+            if(em == "admin@gmail.com" && pass == "secret"){
+                window.location = "dashboard.php";
+            }
+           });
+
+           $("#cls").click(function(){
+            $("#email").val("4");//set
+            $("#pass").val("4");//set
+           });
+
+        });
+    </script>
+</body>
+
+</html>
