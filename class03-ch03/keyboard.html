@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style type="text/css">
+        div {
+            border: 1px solid black;
+            float: left;
+            height: 200px;
+            margin: 10px;
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>You can toggle this div using Alt+S</div>
+
+    <div>You can toggle this div using Alt+G </div>
+
+    <p style="clear:both;">&nbsp;</p>
+    <p>Press Alt+B to toggle both divs</p>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            //remember that this is a global variable 
+            var altPressed = false;
+            $(document).keydown(function (event) {
+                if (event.which == 18)
+                    altPressed = true;
+                if (altPressed) {
+                    switch (event.which) {
+                        case 83:
+                            $('div:first').slideToggle('slow');
+                            return false;
+                            break;
+                        case 71:
+                            $('div:last').slideToggle('slow');
+                            return false;
+                            break;
+                        case 66:
+                            $('div').slideToggle('slow');
+                            return false;
+                            break;
+                    }
+                }
+            });
+            $(document).keyup(function (event) {
+                if (event.which == 18)
+                    altPressed = false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

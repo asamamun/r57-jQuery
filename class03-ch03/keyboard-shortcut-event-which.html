@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style>
+        img {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>press Ctrl+1, Ctrl+2,...,Ctrl+7 to toggle image. Got all images press Ctrl + a</p>
+        <div id="group1">
+            <h3>Group 1 Images</h3>
+            <img class="hoverMe" src="https://picsum.photos/id/1/200/300" alt="" data-desc="image1 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/2/200/300" alt="" data-desc="image2 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/3/200/300" alt="" data-desc="image3 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/4/200/300" alt="" data-desc="image4 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/5/200/300" alt="" data-desc="image5 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/6/200/300" alt="" data-desc="image6 desc">
+            <img class="hoverMe" src="https://picsum.photos/id/7/200/300" alt="" data-desc="image7 desc">
+        </div>
+        <ul>
+            <li>16:shift</li>
+            <li>17:ctrl</li>
+            <li>18:alt</li>
+            <li>13:enter</li>
+            <li>65:A</li>
+            <li>49:A</li>
+            <li>50:B</li>
+            <li>51:C</li>
+        </ul>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).keydown(function (e) {
+                console.log(e.which);
+                // return;
+                if (event.which == 18)
+                    altPressed = true;
+                    if(altPressed)
+{
+switch(event.which)
+{
+case 65:
+$('img').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 49:
+$('img:eq(0)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 50:
+$('img:eq(1)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 51:
+$('img:eq(2)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 52:
+$('img:eq(3)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 53:
+$('img:eq(4)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 54:
+$('img:eq(5)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+case 55:
+$('img:eq(6)').slideToggle('slow').css("display", "inline");
+return false;
+break;
+}
+}
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

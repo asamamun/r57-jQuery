@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="bBtn">bind events for li</button>
+        <button id="uBtn">unbind events from li</button>
+        <ul>
+            <li>India</li>
+            <li>USA</li>
+            <li>UK</li>
+            <li>France</li>
+            </ul>
+        <input type="text">
+        <button id="ub">unbind</button>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input:text').bind(                {
+                    focus: function () {
+                        $(this).val('ABC');
+                    },
+                    blur: function () {
+                        $(this).val('Enter some text');
+                    }
+                });
+
+                $("#ub").click(function(){
+                    $('input:text').unbind();
+                })
+/*                 $("input:text").focus(function(){
+                    $(this).val('ABC');
+                })
+                $("input:text").blur(function(){
+                    $(this).val('Enter some text');
+                }) */
+
+                /* $("li").click(function(){
+                    $(this).css("background-color","red");
+                }) */
+                // $("li").bind("click",function(){
+                //     $(this).css("background-color","red");
+                // });
+
+                $("#uBtn").click(function(){
+                    $("li").unbind();
+                })
+                $("#bBtn").click(function(){
+                    $("li").bind("click",function(){
+                        $(this).css("background-color","red");  
+                    });
+                });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

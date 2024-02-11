@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="s.php" id="testForm">
+            <input type="text" name="uname" id="uname">
+            <input type="password" name="upass" id="upass">
+            <input type="button" value="GO" id="loginBtn">
+        </form>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#loginBtn").click(function(){
+let u = $("#uname").val();
+let p = $("#upass").val();
+if(u != "" && p.length >6)
+{
+    //submit the form with our custom checking
+    $("#testForm").submit(); 
+} 
+else{
+    alert("password too short")
+}              
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

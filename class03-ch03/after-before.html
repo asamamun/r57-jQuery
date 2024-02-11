@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 id="status">t bang</h1>
+        <div id="d1">d1</div>
+        <div id="d2">d2</div>
+        <hr>
+        <button id="mtbtn">empty container</button>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#d1").after("<h3>after content</h3>");
+            $("#d2").before("<h3>before content</h3>");
+            $("#mtbtn").click(function(){
+                $(".container").empty();
+                // $(".container").remove();
+            });
+            $("<button>Click me</button>").insertAfter("#mtbtn");
+            $("#status").prepend("Smar");
+            $("#status").append("ladesh");
+        });
+
+    </script>
+
+</body>
+
+</html>

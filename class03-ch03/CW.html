@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="hobby"> <button id="addhobby">+</button>
+        <div id="hobbyContainer">
+            <ol id="listhobby">
+
+            </ol>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#addhobby").click(function(){
+                $("#listhobby").append("<li>"+$("#hobby").val()+"</li>");
+                $("#hobby").val('').focus();
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

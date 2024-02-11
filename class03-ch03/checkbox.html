@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style type="text/css">
+        ul {
+            background-color: #DCDCDC;
+            list-style: none;
+            margin: 0pt;
+            padding: 0pt;
+            width: 350px;
+        }
+
+        li {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <input type="checkbox" id="handle">
+                <label for="handle">
+                    <strong>Toggle All</strong></label>
+            </li>
+            <li>
+                <input type="checkbox" class="toggle" />
+                <label>A Study in Scarlet</label>
+            </li>
+            <li>
+                <input type="checkbox" class="toggle" />
+                <label>The Sign of the Four</label>
+            </li>
+            <li>
+                <input type="checkbox" class="toggle" />
+                <label>The Adventures of Sherlock Holmes</label>
+            </li>
+            <li>
+                <input type="checkbox" class="toggle" />
+                <label>The Valley of Fear</label>
+            </li>
+            <li>
+                <input type="checkbox" class="toggle" />
+                <label>His Last Bow</label>
+            </li>
+            <li><input type="button" id="getValue" value="Get Selected Values" /></li>
+            <li id="selected"></li>
+        </ul>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#handle').click(function () {
+                // alert($(this).prop("checked"));
+                $(".toggle").prop("checked", $(this).prop("checked"));
+            });
+
+
+            $("#getValue").click(function (e) {
+                $("#selected").html("<b>You selected:</b><br>");
+                //alert($(".toggle:checked").length);
+                if ($(".toggle:checked").length) {
+
+                    $(".toggle:checked").each(function () {
+                        //alert(55);
+                        $("#selected").append($(this).next("label").html() + "<br> ");
+                    });
+                }
+                else{
+                    $("#selected").append("Nothing");
+                }
+            });
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
