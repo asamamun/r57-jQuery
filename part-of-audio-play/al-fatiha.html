@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="ayataudio" src="001.mp3"></audio>
+    <img src="surah-al-fatiha.gif" alt="">
+    <div class="surahcontainer">
+        <h3>Al Fatiha</h3>
+	<a href="" id="a1" start="0" end="12">1/ta-ab-buz/tasmia</a>
+    <a href="" id="a1" start="12" end="17.7">2</a>
+    <a href="" id="a2" start="17.7" end="22">3</a>
+    <a href="" id="a2" start="22" end="26.8">4</a>
+    <a href="" id="a2" start="26.8" end="33.2">5</a>
+    <a href="" id="a2" start="33.2" end="38.8">6</a>
+    <a href="" id="a2" start="38.8" end="51.91">7</a>
+</div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script>
+        $starttime = 0;
+        $endtime = 0;
+        $player = null;
+        const video = document.querySelector('#ayataudio');
+        /*
+var endTime = 0;
+// do this binding once at page load time
+myaudio.addEventListener("timeupdate", function() {
+    if(this.currentTime >= endTime) {
+        this.pause();
+    }
+});
+        */
+$(document).ready(function(){
+$(".surahcontainer a").click(function(e){
+    e.preventDefault();
+$s = $(this);
+$starttime = $s.attr("start");
+$endtime = $s.attr("end");
+$player = document.getElementById("ayataudio");
+$player.currentTime = $starttime;
+$player.play();
+$player.addEventListener('timeupdate', (event) => {
+  console.log($player.currentTime);
+  if($player.currentTime > $endtime ) $player.pause();
+});
+});
+});
+    </script>
+</body>
+</html>
