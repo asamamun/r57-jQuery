@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="wrapper">
+<div id="productContainer">
+
+</div>
+    </div>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        function showproducts(data){
+            let html = "";
+            data.forEach(e => {
+                html += `
+                <h3>${e.name}</h3>
+                <p>${e.details}</p><hr>
+                `;
+            });
+            $("#productContainer").html(html);
+        }
+        $(document).ready(function () {
+            let url = "http://localhost/ROUND57/jQuery/r57-jQuery/class04-ch03/products.json";
+            /* $.getJSON(url,function(d){
+                // console.log(d[2].data);
+                showproducts(d[2].data);
+            }); */
+            fetch(url)
+            .then(e=> e.json())
+            .then(d=> showproducts(d[2].data) );
+            
+        });
+    </script>
+</body>
+</html>

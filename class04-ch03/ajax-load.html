@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style>
+        #spin{
+            position: absolute;
+            left:50%;
+            top:50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="spinner-border text-primary" role="status" id="spin">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        <marquee behavior="" direction="">test, test,test, test,test, test</marquee>
+        <button id="load">load menu</button>
+        <div id="mainnav" class="placeholder-glow">
+            <span class="placeholder col-6"></span>
+<span class="placeholder w-75 "></span>
+<span class="placeholder" style="width: 25%;"></span>
+        </div>
+        <hr>
+        <button id="good" class="goodbad">GOOD</button>
+        <button id="bad" class="goodbad">BAD</button>
+        <hr>
+        <div id="result">
+            <div class="placeholder-glow">
+                <li class="placeholder w-75"></li>
+    <li class="placeholder w-75"></li>
+    <li class="placeholder" style="width: 25%;"></li>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#spin").hide();
+            $("#load").click(function () {
+                $("#mainnav").load("inc/menu.inc");
+            });
+
+            //
+            $(".goodbad").click(function(){
+                // console.log($(this).attr("id"));
+                $("#spin").show();
+                $("#result").load("inc/actors.php",{
+                    type : $(this).attr("id"),
+                    time: "12022024"
+                },function(){
+                    $("#spin").hide();
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

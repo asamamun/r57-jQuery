@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <marquee behavior="" direction="">test, test,test, test,test, test</marquee>
+        <div id="mainnav">
+            <button id="load">load menu</button>
+        </div>
+        <hr>
+
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("#mainnav").load("inc/menu.inc");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
