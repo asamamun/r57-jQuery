@@ -1,0 +1,21 @@
+[15-Mar-2022 18:13:43 Asia/Dhaka] PHP Warning:  Undefined array key "c" in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:13:43 Asia/Dhaka] PHP Warning:  Undefined variable $ in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:13:43 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php:10
+Stack trace:
+#0 F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php(18): getHTML(NULL)
+#1 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 10
+[15-Mar-2022 18:14:13 Asia/Dhaka] PHP Warning:  Undefined array key "c" in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:14:13 Asia/Dhaka] PHP Warning:  Undefined variable $ in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:14:13 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php:10
+Stack trace:
+#0 F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php(18): getHTML(NULL)
+#1 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 10
+[15-Mar-2022 18:15:35 Asia/Dhaka] PHP Warning:  Undefined array key "c" in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:15:35 Asia/Dhaka] PHP Warning:  Undefined variable $ in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 18
+[15-Mar-2022 18:15:35 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php:10
+Stack trace:
+#0 F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php(18): getHTML(NULL)
+#1 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class08\ch4\page84server.php on line 10

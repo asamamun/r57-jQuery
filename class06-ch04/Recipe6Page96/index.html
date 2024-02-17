@@ -1,0 +1,59 @@
+<html> 
+<head> 
+<title>Load page in parts</title>
+<script src="../../assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function () 
+{ 
+$('#loadFooter').click(function() 
+{ 
+$('#footer').load('footer.php'); 
+});
+
+$('body').on("click",'span.links', function(){
+	//e.preventDefault();
+	//alert($(this).attr("v"));
+	var loadfile = $(this).attr("v") + ".php";
+	//$('#content').load(loadfile);
+	//$('#content').fadeOut(time,callback);
+	$('#content').fadeOut(500,function(){
+		$('#content').load(loadfile).fadeIn(500);
+		});
+		
+	//
+});
+$('#content').wrap("<div class='new'></div>");
+}); 
+</script> 
+<style type="text/css"> 
+body { margin:0 auto;text-align:center;width:700px; } 
+div { padding:10px;border:1px dotted black; }
+#footer > span { font-size:12px;margin:40px; cursor: pointer;}
+.new{color:white;background-color:#999999}
+#content{height:250px}
+</style> 
+</head> 
+<body> 
+<div> 
+<div id="head"><marquee><h2>My new awesome page</h2></marquee></div> 
+<div id="content"> 
+<span> 
+Aliquam quis massa at elit fermentum vestibulum. 
+Vestibulum id nunc et nulla placerat gravida. Praesent 
+sed purus ante. Vestibulum pulvinar tortor sed odio 
+accumsan a cursus magna pellentesque. In hac habitasse 
+platea dictumst. Cras viverra sodales sem in facilisis. 
+Nulla congue, risus eget gravida feugiat, nisi ante 
+laoreet est, ullamcorper hendrerit lacus velit eget urna. 
+Suspendisse rutrum lacus eget nulla semper sit amet 
+egestas tellus scelerisque. Maecenas at vulputate enim. 
+Etiam blandit magna iaculis tellus tincidunt vel ornare 
+diam. 
+</span> 
+</div> 
+<div id="footer"> 
+<a href="#" id="loadFooter">Show footer</a>
+</div> 
+</div> 
+</body> 
+</html>

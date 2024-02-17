@@ -1,0 +1,4 @@
+[12-Nov-2018 10:04:37 Asia/Dhaka] PHP Notice:  Undefined index: us in D:\xampp728\htdocs\r37m\jQuery\class08\ch5\page107php.php on line 2
+[12-Nov-2018 10:04:37 Asia/Dhaka] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp728\htdocs\r37m\jQuery\class08\ch5\page107php.php on line 4
+[12-Nov-2018 11:26:28 Asia/Dhaka] PHP Notice:  Undefined variable: errorArray in D:\xampp728\htdocs\r37m\jQuery\class08\ch5\Recipe7Page125.php on line 44
+[12-Nov-2018 11:26:28 Asia/Dhaka] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp728\htdocs\r37m\jQuery\class08\ch5\Recipe7Page125.php on line 44

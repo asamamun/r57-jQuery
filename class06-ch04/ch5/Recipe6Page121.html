@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../assets/js/jquery-3.6.3.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: "Trebuchet MS", verdana;
+            width: 450px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        #info {
+            color: #008000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="process.php" method="post">
+        <fieldset>
+            <legend><strong>Personal</strong></legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:* </td>
+                        <td><input type="text" class="required" /></td>
+                    </tr>
+                    <tr>
+                        <td>Address:* </td>
+                        <td><input type="text" class="required" /></td>
+                    </tr>
+                    <tr>
+                        <td>Country:* </td>
+                        <td><input type="text" class="required" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Other Details</strong></legend>
+            <table>
+                <tbody>
+                    <tr>
+                    <tr>
+                        <td>Age:* </td>
+                        <td><input type="text" class="required number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Expenses:* </td>
+                        <td><input type="text" class="required number" />
+                        </td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <span id="info"></span>
+        <br />
+        <input type="button" value="Save" id="save" />
+    </form>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                    $('input:text').bind('focus keyup', validate);
+
+                    function validate() {
+                        var cur = $(this);
+                        cur.next("span").remove();
+                        if (cur.hasClass('required')) {
+                            if ($.trim(cur.val()) == '') {
+                                cur.after('<span class="error"> Mandatory field </span>');
+                                    cur.data('valid', false);
+                                }
+                                else {
+                                    cur.data('valid', true);
+                                }
+                            }
+                            if (cur.hasClass('number')) {
+                                if (isNaN(cur.val())) {
+                                    cur.after('<span class="error"> Must be a number </span>');
+                                        cur.data('valid', false);
+                                    }
+                                    else {
+                                        dataValid = true;
+                                        cur.data('valid', true);
+                                    }
+                                }
+                            }
+                            $('#save').click(function () {
+                                var dataValid = true;
+                                $('.required').each(function () {
+                                    var current = $(this);
+                                    if (current.data('valid') != true) {
+                                        dataValid = false;
+                                    }
+                                });
+                                $('.number').each(function () {
+                                    var current = $(this);
+                                    if (current.data('valid') != true) {
+                                        dataValid = false;
+                                    }
+                                });
+                                if (dataValid)
+                                    $('#info').css("color","green").html('Validation OK');
+                                else
+                                    $('#info').css('color',"red").html('Please fill correct values in fields.');
+                            });
+                        });
+    </script>
+</body>
+
+</html>

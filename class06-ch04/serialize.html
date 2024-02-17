@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <style type="text/css">
+
+    /* Style your button */
+    #submitGO {
+        background-color: #FFFFFF; /* Initial background color */
+        padding: 10px 20px;
+        border: 1px solid #000000;
+        cursor: pointer;
+    }
+
+        ul{ border:1px solid black; list-style: none;
+        margin:0pt;padding:0pt;float:left;font-family:Verdana,
+        Arial, Helvetica, sans-serif;font-size:12px;width:400px;
+        }
+        li{ padding:10px 5px;border-bottom:1px solid black;}
+        label{width:100px;text-align:right;
+        margin-right:10px;float:left;}
+        </style>
+</head>
+<body>
+    <div class="container">
+            <form id="subForm">
+                    <ul>
+                    <li><label>Email:</label>
+                    <input type="text" id="email" name="email"/></li>
+                    <li><label>Full Name</label>
+                    <input type="text" name="fullName" id="fullName"/></li>
+                    <li>
+                    <label>Sex</label>
+                    <input type="radio" name="sex" value="M"/>Male
+                    <input type="radio" name="sex" value="F"/>Female
+                    </li>
+                    <li>
+                    <label>Country</label>
+                    <select name="country">
+                    <option value="IN">India</option>
+                    <option value="UK">UK</option>
+                    <option value="US">USA</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label>Newsletter</label>
+                    <input type="checkbox" name="letter"/>Send me more
+                    information</li>
+                    <li>
+                    <input type="button" id="submitGO" value="GO"/>
+                    </li>
+                    </ul>
+                    </form>
+                    <hr>
+                    <p id="result"></p>
+
+    </div>
+        <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="loader.js"></script>
+    <script>
+        //email=admin%40idbbisew.com&fullName=asdf&sex=M&country=UK&letter=on
+    $(document).ready(function () {
+        $("#submitGO").click(function(){
+            // alert($("#email").val())
+            console.log($("#subForm").serialize());
+            console.log($("#subForm").serializeArray());
+            // return;
+            //email=asamamun.web%40gmail.com&fullName=ASA%20Al-Mamun&sex=M&country=UK&letter=on
+            //console.log($("#subForm").serializeArray());
+            //return;
+            //email=admin%40idbbisew.com&fullName=admin&sex=M&country=UK&letter=on
+            $.post(
+                "serializeserver.php",
+                 {
+                    data:$("#subForm").serialize()
+                },
+               /* {
+                  em:$("#email").val(),
+                  fn:$("#fullName").val(),
+                },*/
+                function(d){
+                    // alert(d);
+                    $("#result").html(d);
+                });
+        });
+    });
+    </script>
+</body>
+</html>

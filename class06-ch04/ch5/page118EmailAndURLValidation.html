@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Search</title>
+<style type="text/css">
+body{font-family:"Trebuchet MS",verdana;width:450px;}
+.error{ color:red; }
+#info{color:#008000;font-weight:bold; }
+</style>
+<script src="../../assets/js/jquery-3.6.3.min.js"></script>
+<script>
+$(document).ready(function ()
+{
+$('#check').click(validate);
+function validate()
+{
+var dataValid = true;
+$('.mail').each(function() {
+var cur = $(this);
+cur.next('span').remove();
+var emailPattern = /^([a-z0-9_\.-])+@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+if (!emailPattern.test(cur.val()))
+{
+cur.after('<span class="error"> Invalid Email Id</span>');
+dataValid = false;
+}
+});
+if(!dataValid) return;
+$('.site').each(function() {
+var cur = $(this);
+cur.next('span').remove();
+var urlPattern = /^(http(s?))\:\/\/(www\.)?([0-9a-zA-Z\-]+\.)+[a-zA-Z]{2,6}(\:[0-9]+)?(\/\S*)?$/;
+if (!urlPattern.test(cur.val()))
+{
+cur.after('<span class="error"> Invalid URL</span>');
+dataValid = false;
+}
+});
+if(dataValid)
+{
+$('#info').html('Validation OK');
+}
+}
+});
+</script>
+</head>
+<body>
+<form action="process.php" method="post">
+<fieldset>
+<legend><strong>Contact Details</strong>- both fields are
+mandatory</legend>
+<table>
+<tbody>
+<tr>
+<tr>
+<td>Email: </td>
+<td><input type="text" class="required mail"/></td>
+</tr>
+<tr>
+<td>Website:<br/>(start with http://) </td>
+<td><input type="text" class="required site"/></td>
+</tr>
+</tr>
+</tbody>
+</table>
+</fieldset>
+<br/>
+<span id="info"></span>
+<br/>
+<input type="button" value="Check" id="check" />
+</form>
+</body>
+</html>

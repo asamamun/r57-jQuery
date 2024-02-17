@@ -1,0 +1,4 @@
+[13-Nov-2018 11:41:33 Asia/Dhaka] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'r30_jquery' in D:\xampp728\htdocs\r37m\jQuery\class09\page156\index.php on line 90
+[13-Nov-2018 11:48:37 Asia/Dhaka] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'r30_jquery' in D:\xampp728\htdocs\r37m\jQuery\class09\page156\index.php on line 90
+[13-Nov-2018 11:48:55 Asia/Dhaka] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'r30_jquery' in D:\xampp728\htdocs\r37m\jQuery\class09\page156\index.php on line 90
+[13-Nov-2018 11:49:03 Asia/Dhaka] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'r30_jquery' in D:\xampp728\htdocs\r37m\jQuery\class09\page156\index.php on line 90

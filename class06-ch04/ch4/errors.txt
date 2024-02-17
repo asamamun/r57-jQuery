@@ -1,0 +1,35 @@
+[02-Nov-2019 16:08:54 Asia/Dhaka] PHP Notice:  Undefined variable:  in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\page84server.php on line 18
+[02-Nov-2019 16:08:54 Asia/Dhaka] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\page84server.php on line 10
+[02-Nov-2019 16:22:32 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 2
+[02-Nov-2019 16:25:46 Asia/Dhaka] PHP Warning:  parse_str() expects parameter 1 to be string, array given in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 3
+[02-Nov-2019 16:25:46 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 4
+[02-Nov-2019 16:33:05 Asia/Dhaka] PHP Notice:  Undefined index: letter in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 9
+[02-Nov-2019 16:33:53 Asia/Dhaka] PHP Notice:  Undefined index: letter in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 9
+[02-Nov-2019 16:52:39 Asia/Dhaka] PHP Notice:  Undefined index: data in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 3
+[02-Nov-2019 16:52:39 Asia/Dhaka] PHP Notice:  Undefined index: email in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 5
+[02-Nov-2019 16:52:39 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 6
+[02-Nov-2019 16:52:39 Asia/Dhaka] PHP Notice:  Undefined index: sex in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 7
+[02-Nov-2019 16:52:39 Asia/Dhaka] PHP Notice:  Undefined index: country in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 8
+[02-Nov-2019 17:15:18 Asia/Dhaka] PHP Notice:  Undefined index: data in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 3
+[02-Nov-2019 17:15:18 Asia/Dhaka] PHP Notice:  Undefined index: email in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 5
+[02-Nov-2019 17:15:18 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 6
+[02-Nov-2019 17:15:18 Asia/Dhaka] PHP Notice:  Undefined index: sex in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 7
+[02-Nov-2019 17:15:18 Asia/Dhaka] PHP Notice:  Undefined index: country in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 8
+[02-Nov-2019 17:16:10 Asia/Dhaka] PHP Notice:  Undefined index: data in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 3
+[02-Nov-2019 17:16:10 Asia/Dhaka] PHP Notice:  Undefined index: email in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 5
+[02-Nov-2019 17:16:10 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 6
+[02-Nov-2019 17:16:10 Asia/Dhaka] PHP Notice:  Undefined index: sex in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 7
+[02-Nov-2019 17:16:10 Asia/Dhaka] PHP Notice:  Undefined index: country in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 8
+[02-Nov-2019 18:24:51 Asia/Dhaka] PHP Notice:  Undefined index: data in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 3
+[02-Nov-2019 18:24:51 Asia/Dhaka] PHP Notice:  Undefined index: email in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 5
+[02-Nov-2019 18:24:51 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 6
+[02-Nov-2019 18:24:51 Asia/Dhaka] PHP Notice:  Undefined index: sex in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 7
+[02-Nov-2019 18:24:51 Asia/Dhaka] PHP Notice:  Undefined index: country in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\ajaxMethodServer.php on line 8
+[02-Nov-2019 18:25:21 Asia/Dhaka] PHP Notice:  Undefined index: c in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\page84server.php on line 18
+[02-Nov-2019 18:25:21 Asia/Dhaka] PHP Notice:  Undefined variable:  in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\page84server.php on line 18
+[02-Nov-2019 18:25:21 Asia/Dhaka] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\page84server.php on line 10
+[02-Nov-2019 18:25:33 Asia/Dhaka] PHP Notice:  Undefined index: data in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 3
+[02-Nov-2019 18:25:33 Asia/Dhaka] PHP Notice:  Undefined index: email in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 5
+[02-Nov-2019 18:25:33 Asia/Dhaka] PHP Notice:  Undefined index: fullName in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 6
+[02-Nov-2019 18:25:33 Asia/Dhaka] PHP Notice:  Undefined index: sex in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 7
+[02-Nov-2019 18:25:33 Asia/Dhaka] PHP Notice:  Undefined index: country in D:\xampp728\htdocs\r41A\jQuery\classes\class07\ch4\serializeserver.php on line 8

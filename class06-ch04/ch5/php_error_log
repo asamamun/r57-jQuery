@@ -1,0 +1,4 @@
+[12-Apr-2018 13:26:00 Asia/Dhaka] PHP Notice:  Undefined index: usersite in E:\xampp\htdocs\r35\jQuery\class08\ch5\page107php.php on line 2
+[12-Apr-2018 13:26:00 Asia/Dhaka] PHP Warning:  Invalid argument supplied for foreach() in E:\xampp\htdocs\r35\jQuery\class08\ch5\page107php.php on line 4
+[16-Mar-2022 15:09:39 Asia/Dhaka] PHP Warning:  Undefined array key "us" in F:\xampp\htdocs\r49\jQuery\classes\class08\ch5\page107php.php on line 2
+[16-Mar-2022 15:09:39 Asia/Dhaka] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\r49\jQuery\classes\class08\ch5\page107php.php on line 4

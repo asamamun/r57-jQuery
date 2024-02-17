@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Search</title>
+<style type="text/css">
+p { border:1px solid black;width:500px;padding:5px;}
+.highlight { background-color:yellow; }
+</style>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('#search').click(highlight);
+	$('#clear').click(clearSelection);
+	
+	function highlight(){
+		var searchText = $('#text').val();
+		//var pattern = '/the/';
+		//var regExp = new RegExp(/the/,'g');
+		//var patt = "/\b" +searchText + "\b/g";
+		clearSelection();
+		$('p').each(function()
+			{
+			var html = $(this).html();
+			var newHtml = html.replace(searchText,$("#replaceText").val());
+            //alert(newHtml);
+            
+			$(this).html(newHtml);
+			});
+
+
+		}
+function clearSelection()
+			{
+					$('p').each(function(){
+					$(this).find('.highlight').each(function(){
+					$(this).replaceWith($(this).html());
+						});
+					});
+			}
+});
+</script>
+</head>
+<body>
+<form>
+<p>
+I consider that a man's brain originally is like a little
+empty attic, and you have to stock it with such furniture
+as you choose. A fool takes in all the lumber of every
+sort that he comes across, so that the knowledge which
+might be useful to him gets crowded out, or at best is
+jumbled up with a lot of other things, so that he has a
+difficulty in laying his hands upon it.
+</p>
+<p>
+I consider that a man's brain originally is like a little
+empty attic, and you have to stock it with such furniture
+as you choose. A fool takes in all the lumber of every
+sort that he comes across, so that the knowledge which
+might be useful to him gets crowded out, or at best is
+jumbled up with a lot of other things, so that he has a
+difficulty in laying his hands upon it.
+</p>
+<p>
+I consider that a man's brain originally is like a little
+empty attic, and you have to stock it with such furniture
+as you choose. A fool takes in all the lumber of every
+sort that he comes across, so that the knowledge which
+might be useful to him gets crowded out, or at best is
+jumbled up with a lot of other things, so that he has a
+difficulty in laying his hands upon it.
+</p>
+Search: <input type="text" id="text"/> | Replace With <input type="text" id="replaceText"/>
+<input type="button" id="search" value="Search And Replace"/>
+<input type="button" id="clear" value="Clear"/>
+</form>
+</body>
+</html>

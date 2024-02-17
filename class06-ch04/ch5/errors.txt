@@ -1,0 +1,2 @@
+[25-Oct-2019 19:15:20 Asia/Dhaka] PHP Notice:  Undefined index: us in D:\xampp728\htdocs\r41A\jQuery\jQueryr37M\class08\ch5\page107php.php on line 2
+[25-Oct-2019 19:15:20 Asia/Dhaka] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp728\htdocs\r41A\jQuery\jQueryr37M\class08\ch5\page107php.php on line 4
