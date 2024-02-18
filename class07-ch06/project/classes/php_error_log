@@ -1,0 +1,139 @@
+[26-Feb-2022 18:59:36 Asia/Dhaka] PHP Warning:  Undefined array key "name" in F:\xampp\htdocs\r49\jQuery\classes\ch01\classes\registration.php on line 3
+[26-Feb-2022 19:02:31 Asia/Dhaka] PHP Warning:  Undefined array key "name" in F:\xampp\htdocs\r49\jQuery\classes\ch01\classes\registration.php on line 3
+[26-Feb-2022 19:02:33 Asia/Dhaka] PHP Warning:  Undefined array key "name" in F:\xampp\htdocs\r49\jQuery\classes\ch01\classes\registration.php on line 3
+[26-Feb-2022 19:02:39 Asia/Dhaka] PHP Warning:  Undefined array key "name" in F:\xampp\htdocs\r49\jQuery\classes\ch01\classes\registration.php on line 3
+[03-Mar-2022 16:21:50 Asia/Dhaka] PHP Parse error:  Unclosed '{' on line 11 in F:\xampp\htdocs\r49\jQuery\classes\class02\classes\registration.php on line 37
+[05-Mar-2022 17:45:26 Asia/Dhaka] PHP Warning:  Undefined variable $connection in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php on line 22
+[05-Mar-2022 17:45:26 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php:22
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php on line 22
+[05-Mar-2022 18:42:03 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[05-Mar-2022 18:42:03 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[05-Mar-2022 18:44:58 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[05-Mar-2022 18:44:58 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[05-Mar-2022 19:04:53 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php:31
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php on line 31
+[05-Mar-2022 19:05:23 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[05-Mar-2022 19:05:23 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[07-Mar-2022 20:10:56 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[07-Mar-2022 20:10:56 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[08-Mar-2022 16:30:54 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[08-Mar-2022 16:30:54 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[08-Mar-2022 16:45:33 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php:34
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php on line 34
+[08-Mar-2022 16:45:44 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php:34
+Stack trace:
+#0 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productAdd.php on line 34
+[15-Mar-2022 15:19:27 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[15-Mar-2022 15:19:27 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[15-Mar-2022 15:19:32 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[15-Mar-2022 15:19:32 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[15-Mar-2022 15:19:35 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[15-Mar-2022 15:19:35 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[15-Mar-2022 15:19:51 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[15-Mar-2022 15:19:51 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[15-Mar-2022 15:19:53 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[15-Mar-2022 15:19:53 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:35:05 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:35:05 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:37:11 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:37:11 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:44:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:44:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:44:46 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:44:46 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:46:33 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:46:33 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:46:33 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:46:33 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:48:53 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:48:53 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:49:19 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:49:19 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:49:19 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:49:19 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[20-Mar-2022 16:50:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[20-Mar-2022 16:50:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[21-Mar-2022 17:07:00 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 12
+[21-Mar-2022 17:07:00 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class03\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:37 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:37 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:41 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:41 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:41 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php:32
+Stack trace:
+#0 F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php(32): explode('.', Array)
+#1 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php on line 32
+[21-Mar-2022 18:53:43 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:43 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:44 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:44 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:45 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:45 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:53:49 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:53:49 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:54:09 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:54:09 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:54:09 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:54:09 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:54:11 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:54:11 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:54:12 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:54:12 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 18:54:13 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 18:54:13 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 19:03:07 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php:33
+Stack trace:
+#0 F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php(33): explode('.', Array)
+#1 {main}
+  thrown in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php on line 33
+[21-Mar-2022 19:07:58 Asia/Dhaka] PHP Warning:  Undefined variable $allfileActualExt in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php on line 39
+[21-Mar-2022 19:07:58 Asia/Dhaka] PHP Warning:  Undefined variable $allfileActualExt in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php on line 39
+[21-Mar-2022 19:07:59 Asia/Dhaka] PHP Warning:  Undefined variable $allfileActualExt in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productAdd.php on line 39
+[21-Mar-2022 19:16:37 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 19:16:37 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 19:16:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 19:16:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 19:16:41 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 19:16:41 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[21-Mar-2022 19:16:45 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[21-Mar-2022 19:16:45 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[22-Mar-2022 15:17:59 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 12
+[22-Mar-2022 15:17:59 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class11\project\classes\productTable.php on line 21
+[22-Mar-2022 15:19:25 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:19:25 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:38:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:38:18 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:39:48 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:39:48 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:40:25 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:40:25 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:40:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:40:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:40:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:40:40 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:43:12 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:43:12 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:46:48 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:46:48 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:50:17 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:50:17 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 15:51:17 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 15:51:17 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 16:02:02 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 16:02:02 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[22-Mar-2022 18:47:35 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[22-Mar-2022 18:47:35 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[23-Mar-2022 18:59:20 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[23-Mar-2022 18:59:20 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[27-Mar-2022 15:24:31 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[27-Mar-2022 15:24:31 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21
+[10-Apr-2022 14:02:42 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 12
+[10-Apr-2022 14:02:42 Asia/Dhaka] PHP Warning:  Undefined array key "userId" in F:\xampp\htdocs\r49\jQuery\classes\class12\project\classes\productTable.php on line 21

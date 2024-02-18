@@ -6,7 +6,7 @@ fieldset{width:450px;}
 ul{padding:2px;list-style:none;}
 label{float:left;width:100px;}
 </style>
-<script src="../../assets/js/jquery-3.6.3.min.js"></script>
+<script src="../../assets/js/jquery-3.7.1.min.js"></script>
 <script>
 
 $(document).ready(function ()
@@ -20,6 +20,7 @@ var str = '<li><label>Name</label><input type="text" class="webnames" value=""/>
 //str+= '</li>';
 $('#sites').append(str);
 });
+
 $('#sites').on('click','.remove', function()
 {
 $(this).parent('li').remove();

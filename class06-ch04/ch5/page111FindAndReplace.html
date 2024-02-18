@@ -5,7 +5,7 @@
 p { border:1px solid black;width:500px;padding:5px;}
 .highlight { background-color:yellow; }
 </style>
-<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/jquery-3.7.1.min.js"></script>
 <script>
 $(document).ready(function(e) {
     $('#search').click(highlight);
@@ -20,7 +20,8 @@ $(document).ready(function(e) {
 		$('p').each(function()
 			{
 			var html = $(this).html();
-			var newHtml = html.replace(searchText,$("#replaceText").val());
+			// var newHtml = html.replace(searchText,$("#replaceText").val());
+			var newHtml = html.replaceAll(searchText,$("#replaceText").val());
             //alert(newHtml);
             
 			$(this).html(newHtml);
