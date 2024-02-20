@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" id="content">
-    <button onclick="talk()">Speak</button> 
+  </head>
+  <body>
+    <input type="text" id="content" />
+    <button onclick="talk()">Speak</button>
     <script>
-        function speak(t){
+      function speak(t) {
         let speech = new SpeechSynthesisUtterance();
         speech.lang = "en";
         speech.text = t;
         window.speechSynthesis.speak(speech);
-    }
+      }
 
-    function talk() {
+      function talk() {
         speak(document.querySelector("#content").value);
-    }
-        
+      }
     </script>
-</body>
+  </body>
 </html>

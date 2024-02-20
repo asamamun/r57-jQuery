@@ -160,12 +160,13 @@ $selectQueryResult = $conn->query($selectQuery);
     <script src="../../assets/js/bootstrap.bundle.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        function speak(t){
+        function speak(t) {
             let speech = new SpeechSynthesisUtterance();
-        speech.lang = "en";
-        speech.text = t;
-        window.speechSynthesis.speak(speech);
-    }
+            speech.lang = "en";
+            speech.text = t;
+            window.speechSynthesis.speak(speech);
+        }
+
         function refreshpage() {
             window.location.href = "select.php";
         }
@@ -263,7 +264,7 @@ $selectQueryResult = $conn->query($selectQuery);
                         console.log(d);
 
                         if (d.success) {
-speak(d.message);
+                            speak(d.message);
                             //swal
                             Swal.fire({
                                 position: "top-end",
@@ -312,7 +313,7 @@ speak(d.message);
                         }, function(d) {
                             //
                             if (d.success) {
-speak(d.message);
+                                speak(d.message);
                                 //swal
                                 Swal.fire({
                                     position: "top-end",
@@ -337,12 +338,12 @@ speak(d.message);
                         //
                     }
                 });
-            });//delete end
+            }); //delete end
             //goto start
-            $("#gotoBtn").click(function(){
-                let page = Number($("#gotoTxt").val());//NaN
-                if(isNaN(page) || page == "") return;
-                window.location = "select.php?page="+page+"&psearch=";
+            $("#gotoBtn").click(function() {
+                let page = Number($("#gotoTxt").val()); //NaN
+                if (isNaN(page) || page == "") return;
+                window.location = "select.php?page=" + page + "&psearch=";
             });
             //goto end
         });

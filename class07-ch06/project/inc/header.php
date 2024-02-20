@@ -119,14 +119,14 @@ if (session_status() === PHP_SESSION_NONE) {
 
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="loginemail" class="form-control form-control-lg"
+            <input type="email" value="admin@gmail.com" id="loginemail" class="form-control form-control-lg"
               placeholder="Enter a valid email address" />
             <label class="form-label" for="loginemail">Email address</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-3">
-            <input type="password" id="loginpass" class="form-control form-control-lg"
+            <input type="password" value="12345" id="loginpass" class="form-control form-control-lg"
               placeholder="Enter password" />
             <label class="form-label" for="loginpass">Password</label>
           </div>
