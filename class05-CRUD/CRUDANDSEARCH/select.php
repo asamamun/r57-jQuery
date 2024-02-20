@@ -160,6 +160,12 @@ $selectQueryResult = $conn->query($selectQuery);
     <script src="../../assets/js/bootstrap.bundle.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function speak(t){
+            let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en";
+        speech.text = t;
+        window.speechSynthesis.speak(speech);
+    }
         function refreshpage() {
             window.location.href = "select.php";
         }
@@ -195,6 +201,7 @@ $selectQueryResult = $conn->query($selectQuery);
 
                         if (d.success) {
                             //swal
+                            speak(d.message);
                             Swal.fire({
                                 position: "top-end",
                                 icon: "success",
@@ -256,7 +263,7 @@ $selectQueryResult = $conn->query($selectQuery);
                         console.log(d);
 
                         if (d.success) {
-
+speak(d.message);
                             //swal
                             Swal.fire({
                                 position: "top-end",
@@ -305,7 +312,7 @@ $selectQueryResult = $conn->query($selectQuery);
                         }, function(d) {
                             //
                             if (d.success) {
-
+speak(d.message);
                                 //swal
                                 Swal.fire({
                                     position: "top-end",
